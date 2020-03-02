@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_before"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/btnBefore" />
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="fr.taartopom.newfragment.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_before"
+        tools:layout="@layout/fragment_first" />
+
+    <Button
+        android:id="@+id/btn_after"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAfter"
+        app:layout_constraintTop_toBottomOf="@+id/fragment"
+        />
+    <fragment
+        android:id="@+id/fragmentToo"
+        android:name="fr.taartopom.newfragment.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/btn_after"
+        tools:layout="@layout/fragment_second"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

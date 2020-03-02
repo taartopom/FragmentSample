@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NewFragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="strLogin">Login: </string>
+    <string name="strPassword">Passeword: </string>
+    <string name="btnConnect">Connect</string>
+    <string name="btnBefore">Before</string>
+    <string name="btnAfter">After</string>
+</resources>
